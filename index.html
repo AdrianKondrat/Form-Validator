@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>From Validator</title>
+    <link rel="stylesheet" href="css/validator.css">
+</head>
+<body>
+
+    <div class="form-container">
+
+        <h1>Form Validation</h1>
+
+        <form action="#" id="myForm">
+
+            <input type="text" name="your-name" placeholder="Full name" data-error="Please write your full name">
+
+            <input type="email" name="your-email" placeholder="Email" data-error="Incorrect email">
+
+            <select name="your-subject" data-error="Choose your topic">
+                <option value="" disabled selected>- Topic -</option>
+                <option value="pytanie">Question</option>
+                <option value="propozycja">Offer</option>
+                <option value="support">Support</option>
+            </select>
+
+            <textarea name="your-message" placeholder="Message" data-error="Write your message"></textarea>
+
+            <button type="submit">Send</button>
+
+        </form>
+
+    </div>
+
+<script src="js/validator.js"></script>
+</body>
+</html>
